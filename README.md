@@ -11,7 +11,7 @@
 }
 ```
 
-### [mmotel.gitbooks.io/ts-ng-path-angular-part-2/content/](https://hadhod.gitbooks.io/ts-ng-path-typescript/content/)
+### hadhod.gitbooks.io/ts-ng-path-typescript/content/
 
 
 
