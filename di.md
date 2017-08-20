@@ -1,3 +1,4 @@
-# Drzewo Dependecy Injection
+# Typy
 
-![](/assets/component-hierarchy.png)
+
+
