@@ -5,6 +5,7 @@ tsc file.ts
 ##### opcje:
 
 * -w (watcher)
+* --init (generuje tsconfig.json)
 
 ##### tsconfig.json:
 
