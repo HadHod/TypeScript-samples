@@ -2,7 +2,7 @@
 
 tsc file.ts
 
-##### opcje:
+##### [opcje](https://www.typescriptlang.org/docs/handbook/compiler-options.html):
 
 * -w (watcher)
 * --init (generuje tsconfig.json)
@@ -13,7 +13,6 @@ tsc file.ts
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "commonjs",
     "strict": true
   },
   "files": [
