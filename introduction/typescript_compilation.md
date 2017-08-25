@@ -28,7 +28,7 @@ tsc file.ts
 ```
 
 ```ts
-window.addEventListener('onload', event => {
-    window.getElementById('foo').innerHTML = 'Hello TypeScript!';
-});
+window.onload = (event: Event) => {
+    document.getElementById('foo').innerHTML = 'Hello TypeScript!';
+};
 ```
