@@ -1,4 +1,3 @@
 # Typy
 
-
-
+(opcjonalne) statyczne typowanie
