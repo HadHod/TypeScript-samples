@@ -43,3 +43,5 @@ window.onload = (event: Event) => {
     document.getElementById('foo').innerHTML = 'Hello TypeScript!';
 };
 ```
+
+[playground](https://www.typescriptlang.org/play/)
