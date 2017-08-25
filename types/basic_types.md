@@ -35,6 +35,26 @@ enum Color {Red, Green, Blue}
 let c: Color = Color.Green;
 ```
 
+##### Obiekty
+```ts
+let x: {
+    name: string;
+    age: number;
+}
+x.name = 'John';
+x.age = 25;
+
+type Person = {
+    name: string;
+    age: number;
+}
+
+let pair: {
+    p1: Person;
+    p2: Person;
+}
+```
+
 ##### "Dodatkowe"
 ```ts
 let a: any = 'yellow';
