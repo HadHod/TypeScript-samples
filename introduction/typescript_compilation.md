@@ -9,7 +9,18 @@ tsc file.ts
 
 ##### tsconfig.json:
 
-* bla bla
+```json
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true
+  },
+  "files": [
+    "./main.ts"
+  ]
+}
+```
 
 ##### pierwsze demo:
 ```html
