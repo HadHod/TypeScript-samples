@@ -43,16 +43,6 @@ let x: {
 }
 x.name = 'John';
 x.age = 25;
-
-type Person = {
-    name: string;
-    age: number;
-}
-
-let pair: {
-    p1: Person;
-    p2: Person;
-}
 ```
 
 ##### "Dodatkowe"
