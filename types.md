@@ -7,12 +7,12 @@
 ```ts
 export interface IUserRaw {
     name: string;
-    isAdmin: boolean
+    isAdmin: boolean;
 }
 
 export class User {
     name: string;
-    isAdmin: boolean
+    isAdmin: boolean;
     
     constructor (u: IUserRaw) {
         this.name = u.name;
