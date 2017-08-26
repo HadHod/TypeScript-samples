@@ -1,15 +1,34 @@
-# Potoki (Pipes)
+# [Klasy](https://www.typescriptlang.org/docs/handbook/classes.html) i Interfejsy
 
-## wbudowane potoki
-
-## customowe potoki
-
-```js
-@Pipe({name: 'exponentialStrength'})
-export class ExponentialStrengthPipe implements PipeTransform {
-  transform(value: number, exponent: string): number {
-    let exp = parseFloat(exponent);
-    return Math.pow(value, isNaN(exp) ? 1 : exp);
-  }
+Przykład prostej klasy
+```ts
+class Animal {
+    name: string;  // domyślny modyfikator dostępu: public
+    
+    constructor (name: string, size: number) {
+        this.name = name;
+    }
+    
+    sayName () {
+        return name;
+    }
 }
 ```
+
+dziedziczenie
+```ts
+class Dog extends Animal {
+    constructor (name: string) { super(name); }
+}
+```
+
+wywołanie metody z klasy nadrzędnej
+```ts
+let d = new Dog('Reksio');
+d.sayName();
+```
+
+Modyfikatory dostępu:
+* public
+* private
+* protected
