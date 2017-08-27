@@ -1,8 +1,7 @@
 ### Elementy TypeScript
 
 * statyczne typowanie (opcjonalne)
-* klasy
-* interfejsy
+* klasy i interfejsy
 * moduły
 * typy generyczne
 * dekoratory

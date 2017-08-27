@@ -2,8 +2,14 @@
 
 * Typy w TypeScript są opcjonalne
 * domyslnym typem jest ```Any```
-* typy jako sugestia
 
+```ts
+let x;
+x = 1;
+x = 'test';
+```
+
+Przykład z życia:
 ```ts
 export interface IUserRaw {
     name: string;
