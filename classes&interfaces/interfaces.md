@@ -50,3 +50,41 @@ Gdy próbujemy nadpisać wartość pola z ```readonly``` dostajemy błąd.
 let p1: IPoint = { x: 10, y: 20 };
 p1.x = 5; // error!
 ```
+
+### Function Types
+Opis funkcji w interfejsie:
+```ts
+interface ISearchFunc {
+    (source: string, subString: string): boolean;
+}
+```
+Implementacja:
+```ts
+let mySearch: ISearchFunc;
+mySearch = function (src: string, sub: string): boolean {
+    let result = src.search(sub);
+    return result > -1;
+}
+```
+
+### Rozszerzanie interfejsów
+Interfejsy rozszerzamy przez słówko kluczowe ```extends```.
+```ts
+interface IShape {
+    color: string;
+}
+
+interface ISquare extends IShape {
+    sideLength: number;
+}
+
+let square = <ISquare>{};
+square.color = 'blue';
+square.sideLength = 10;
+```
+Możemy rozszerzać wiele interfejsów:
+```ts
+interface IMain extends I1, I2, I3 {
+    // ...
+}
+```
