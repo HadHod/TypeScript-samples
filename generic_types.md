@@ -25,7 +25,7 @@ let toStr: (number) => string = (n) => n + '';
 console.log(genericFunction2(1, toStr));
 ```
 
-### Klasy
+### Klasy generyczne
 ```ts
 class GenericCollection<T> {
     private collection: T[] = [];
@@ -66,6 +66,27 @@ class GenericCollection<T extends IUser> {
 }
 ```
 ### Upgradujemy przykład z patter matching
+dodajemy typ "uniwersalny"
 ```ts
-(...)
+interface NumberPattern<T> {
+    One: () => T;
+    Two: () => T;
+    Three: () => T;
+    Other: (n: number) => T;
+}
+
+function matchNumber<T>(p: NumberPattern<T>): (n: number) => T {
+    return (n: number): T => {
+        // ...
+    };
+}
+```
+użycie:
+```ts
+const isLargerThanThree = matchNumber({
+  One: () => false,
+  Two: () => false,
+  Three: () => false,
+  Other: n => n > 3
+});
 ```

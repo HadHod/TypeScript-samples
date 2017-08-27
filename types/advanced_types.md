@@ -46,7 +46,7 @@ let pair: {
 type Welcome = 'Hi' | 'Hello' | 'What\'s up?';
 ```
 
-##### Funkcja jako typ
+##### Typowanie funkcji
 
 ```ts
 let isTrue: () => boolean = () => true
