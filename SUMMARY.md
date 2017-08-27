@@ -12,7 +12,6 @@
 * [2. Klasy i Interfejsy](classes&interfaces.md)
 * [2.1 Klasy](classes&interfaces/classes.md)
 * [2.2 Interfejsy](classes&interfaces/interfaces.md)
-* [3. Typy generyczne](generic_types.md)
-* [4. Typowanie funkcji i metod](function_types.md)
+* [3. Moduły](modules.md)
+* [4. Typy generyczne](generic_types.md)
 * [5. Dekoratory](decorators.md)
-
