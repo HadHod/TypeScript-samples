@@ -14,6 +14,16 @@ let s = genericFunction<string>('Hello');
 let n = genericFunction<number>(1234567);
 ```
 możemy tez użyć więcej niż jeden typ generyczny
+```ts
+function genericFunction2<T, U> (variable: T, fun: (T) => U): U {
+    return fun(variable);
+}
+```
+wywołanie
+```ts
+let toStr: (number) => string = (n) => n + '';
+console.log(genericFunction2(1, toStr));
+```
 
 ### Klasy
 ```ts
@@ -50,8 +60,12 @@ let usersCollection = new GenericCollection<IUser>(
 class GenericCollection<T extends IUser> {
     (...)
     findUser (name: string) {
-        return this.collection.filter(e => e.name === name)[;
+        return this.collection.filter(e => e.name === name);
     }
     (...)
 }
+```
+### Upgradujemy przykład z patter matching
+```ts
+(...)
 ```
