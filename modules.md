@@ -1,6 +1,6 @@
 ### [Moduły](https://www.typescriptlang.org/docs/handbook/modules.html)
 
-Tworząc ```module```, zamykamy wszystkie deklaracje wewnątrz w obrębie stworzonego modułu. Sprawdźmy przykład z importem kodu z innego pliku.
+Tworząc ```module```, zamykamy wszystkie deklaracje wewnątrz stworzonego modułu. Sprawdźmy przykład z importem kodu z innego pliku.
 
 ##### user.ts
 ```ts

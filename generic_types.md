@@ -65,7 +65,7 @@ class GenericCollection<T extends IUser> {
     (...)
 }
 ```
-### Upgradujemy przykład z patter matching
+### Upgradujemy przykład z pattern matching
 dodajemy typ "uniwersalny"
 ```ts
 interface NumberPattern<T> {
