@@ -6,7 +6,7 @@ Tworząc ```module```, zamykamy wszystkie deklaracje wewnątrz w obrębie stworz
 ```ts
 export class User {
     
-    constructor (private name: string) {]
+    constructor (private name: string) {}
     
     getName () {
         return this.name;
@@ -27,7 +27,7 @@ Możemy zmienić nazwę exportowanego obiektu lub miejsce deklaracji exportu.
 ```ts
 class User {
 
-    constructor (private name: string) {]
+    constructor (private name: string) {}
     
     getName () {
         return this.name;
@@ -37,3 +37,21 @@ class User {
 
 export { User as Person };
 ```
+Tak samo możemy zmienić nazwę podczas importu.
+
+##### Import modułu z efektem ubocznym
+Nie zalecana praktyka. Taki moduł może ustawiać globalny stan zmiennych, ...
+```ts
+import './badModule.js';
+```
+
+##### Re-exporting
+podstawowy przykład:
+```ts
+import { X } from './x';
+export { X as Y };
+```
+w jednej linii:
+```ts
+export { X as Y } from './x';
+``` 
