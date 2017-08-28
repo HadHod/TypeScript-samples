@@ -1,24 +1,39 @@
 ### [Moduły](https://www.typescriptlang.org/docs/handbook/modules.html)
 
-Tworząc ```module```, zamykamy wszystkie deklaracje wewnątrz w obrębie stworzonego modułu.
-##### ModuleA
+Tworząc ```module```, zamykamy wszystkie deklaracje wewnątrz w obrębie stworzonego modułu. Sprawdźmy przykład z importem kodu z innego pliku.
+
+##### user.ts
 ```ts
-module ModuleA {
-    let x: number = 1;
+export class User {
     
-    function funcInModule () {
-        console.log('here I am');
+    constructor (private name: string) {]
+    
+    getName () {
+        return this.name;
     }
     
-    export class C {
-        constructor () {}
-    }
 }
 ```
 
-##### ModuleB
+##### main.ts
 ```ts
-module ModuleB {
+import { User } from './user';
+
+let u: User = new User('Jon');
+console.log(u.getName());
+```
+
+Możemy zmienić nazwę exportowanego obiektu lub miejsce deklaracji exportu.
+```ts
+class User {
+
+    constructor (private name: string) {]
     
+    getName () {
+        return this.name;
+    }
+
 }
+
+export { User as Person };
 ```
