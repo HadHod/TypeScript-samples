@@ -13,7 +13,7 @@ Przykład z życia:
 ```ts
 export interface IUserRaw {
     name: string;
-    isAdmin: boolean;
+    is_admin: boolean;
 }
 
 export class User {
@@ -22,7 +22,7 @@ export class User {
     
     constructor (u: IUserRaw) {
         this.name = u.name;
-        this.isAdmin = u.isAdmin;
+        this.isAdmin = u.is_admin;
     }
 }
 ```
