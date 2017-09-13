@@ -50,6 +50,11 @@ Gdy próbujemy nadpisać wartość pola z ```readonly``` dostajemy błąd.
 let p1: IPoint = { x: 10, y: 20 };
 p1.x = 5; // error!
 ```
+##### tablice tylko do odczytu
+```ts
+let a: number[] = [1, 2, 3, 4];
+let ro: ReadonlyArray<number> = a;
+```
 
 ### Function Types
 Opis funkcji w interfejsie:
