@@ -25,6 +25,26 @@ function add (x: number, y: number = 0) {
     return x + y;
 }
 ```
+wymagane parametry:
+```ts
+function isRequired (name) {
+    throw new Error(name + ' is required')
+}
+
+function calculatePayment(
+    price: any = isRequired('price'),
+    salesTax = 0.047,
+    discount = 0
+) {
+    console.log(price);
+}
+
+try {
+    calculatePayment(1);
+} catch (e) {
+    alert(e);
+}
+```
 
 ##### Type aliases
 
