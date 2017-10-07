@@ -25,7 +25,9 @@ function add (x: number, y: number = 0) {
     return x + y;
 }
 ```
-wymagane parametry:
+
+##### Wymagane parametry:
+
 ```ts
 function isRequired (name) {
     throw new Error(name + ' is required')
